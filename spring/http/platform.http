@@ -1,0 +1,22 @@
+# Get all the platforms
+
+GET http://localhost:8080/platform
+
+###
+
+# Save a platform
+
+POST http://localhost:8080/platform
+Content-Type: application/json
+
+{
+  "name": "My First Platform",
+  "releaseDate": "2011-12-03T10:15:30",
+  "owner": "The Owner"
+}
+
+###
+
+# Delete a specific platform
+
+DELETE http://localhost:8080/platform/1
