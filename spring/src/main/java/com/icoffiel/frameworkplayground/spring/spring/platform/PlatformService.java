@@ -27,14 +27,8 @@ public class PlatformService {
     }
 
     public PlatformResponse save(PlatformRequest platformRequest) {
-        Platform platform = new Platform(
-                null,
-                platformRequest.getName(),
-                platformRequest.getReleaseDate(),
-                platformRequest.getOwner()
-        );
-        Platform savedPlatform = platforms.save(platform);
-        return platformMapper.platformToPlatformResponse(savedPlatform);
+        Platform platform = platformMapper.platformRequestToPlatform(platformRequest);
+        return platformMapper.platformToPlatformResponse(platforms.save(platform));
     }
 
     public void delete(Integer id) {
