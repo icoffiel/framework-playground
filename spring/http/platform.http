@@ -1,0 +1,22 @@
+# Get all the platforms
+
+GET http://localhost:8080/platforms
+
+###
+
+# Save a platform
+
+POST http://localhost:8080/platforms
+Content-Type: application/json
+
+{
+  "name": "Nintendo Entertainment System",
+  "releaseDate": "1983-07-15",
+  "owner": "Nintendo"
+}
+
+###
+
+# Delete a specific platform
+
+DELETE http://localhost:8080/platforms/1
