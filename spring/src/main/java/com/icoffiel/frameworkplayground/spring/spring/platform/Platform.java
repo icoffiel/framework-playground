@@ -9,7 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -21,7 +21,7 @@ public class Platform {
     @GeneratedValue
     private Integer id;
     private String name;
-    private LocalDateTime releaseDate;
+    private LocalDate releaseDate;
     private String owner;
 
     @ManyToMany(mappedBy = "platforms")

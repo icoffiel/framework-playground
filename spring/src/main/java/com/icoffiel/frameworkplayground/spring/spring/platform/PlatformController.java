@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/platform")
+@RequestMapping("/platforms")
 public class PlatformController {
 
     private final PlatformService platformService;

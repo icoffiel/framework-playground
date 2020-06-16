@@ -2,11 +2,11 @@ package com.icoffiel.frameworkplayground.spring.spring.platform.rest;
 
 import lombok.Data;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Data
 public class PlatformRequest {
     private String name;
-    private LocalDateTime releaseDate;
+    private LocalDate releaseDate;
     private String owner;
 }

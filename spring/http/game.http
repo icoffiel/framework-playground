@@ -1,13 +1,13 @@
-GET http://localhost:8080/game
+GET http://localhost:8080/games
 
 ###
 
-POST http://localhost:8080/game
+POST http://localhost:8080/games
 Content-Type: application/json
 
 {
   "name": "Super Mario Bros",
-  "releaseDate": "2011-12-03",
+  "releaseDate": "1985-09-13",
   "noOfPlayers": 1
 }
 
@@ -19,10 +19,10 @@ DELETE http://localhost:8080/1
 
 # Add a game to a platform
 
-PUT http://localhost:8080/game/2/platform/1
+PUT http://localhost:8080/games/2/platform/1
 
 ###
 
 # Remove a game from a platform
 
-DELETE http://localhost:8080/game/2/platform/1
+DELETE http://localhost:8080/games/2/platform/1
