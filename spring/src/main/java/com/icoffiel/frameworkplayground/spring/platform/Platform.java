@@ -1,6 +1,6 @@
-package com.icoffiel.frameworkplayground.spring.spring.game;
+package com.icoffiel.frameworkplayground.spring.platform;
 
-import com.icoffiel.frameworkplayground.spring.spring.platform.Platform;
+import com.icoffiel.frameworkplayground.spring.game.Game;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,20 +10,20 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import java.time.LocalDate;
-import java.util.Set;
+import java.util.List;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Game {
+public class Platform {
     @Id
     @GeneratedValue
     private Integer id;
     private String name;
     private LocalDate releaseDate;
-    private Integer noOfPlayers;
+    private String owner;
 
-    @ManyToMany
-    private Set<Platform> platforms;
+    @ManyToMany(mappedBy = "platforms")
+    private List<Game> games;
 }

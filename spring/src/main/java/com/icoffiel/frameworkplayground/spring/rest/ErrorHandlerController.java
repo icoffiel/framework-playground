@@ -1,4 +1,4 @@
-package com.icoffiel.frameworkplayground.spring.spring.rest;
+package com.icoffiel.frameworkplayground.spring.rest;
 
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;

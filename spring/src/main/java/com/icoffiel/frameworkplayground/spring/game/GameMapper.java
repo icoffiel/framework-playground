@@ -1,8 +1,8 @@
-package com.icoffiel.frameworkplayground.spring.spring.game;
+package com.icoffiel.frameworkplayground.spring.game;
 
-import com.icoffiel.frameworkplayground.spring.spring.game.rest.GameRequest;
-import com.icoffiel.frameworkplayground.spring.spring.game.rest.GameResponse;
-import com.icoffiel.frameworkplayground.spring.spring.platform.PlatformMapper;
+import com.icoffiel.frameworkplayground.spring.game.rest.GameRequest;
+import com.icoffiel.frameworkplayground.spring.game.rest.GameResponse;
+import com.icoffiel.frameworkplayground.spring.platform.PlatformMapper;
 import org.springframework.stereotype.Component;
 
 import java.util.HashSet;

@@ -1,11 +1,12 @@
-package com.icoffiel.frameworkplayground.spring.spring.platform;
+package com.icoffiel.frameworkplayground.spring.platform;
 
-import com.icoffiel.frameworkplayground.spring.spring.platform.rest.PlatformRequest;
-import com.icoffiel.frameworkplayground.spring.spring.platform.rest.PlatformResponse;
+import com.icoffiel.frameworkplayground.spring.platform.rest.PlatformRequest;
+import com.icoffiel.frameworkplayground.spring.platform.rest.PlatformResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -24,7 +25,7 @@ public class PlatformController {
     }
 
     @PostMapping
-    public PlatformResponse addPlatform(@RequestBody PlatformRequest platformRequest) {
+    public PlatformResponse addPlatform(@Valid @RequestBody PlatformRequest platformRequest) {
         return platformService.save(platformRequest);
     }
 

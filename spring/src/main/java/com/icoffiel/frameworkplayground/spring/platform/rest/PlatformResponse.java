@@ -1,4 +1,4 @@
-package com.icoffiel.frameworkplayground.spring.spring.platform.rest;
+package com.icoffiel.frameworkplayground.spring.platform.rest;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

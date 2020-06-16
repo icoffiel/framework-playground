@@ -1,9 +1,9 @@
-package com.icoffiel.frameworkplayground.spring.spring.game;
+package com.icoffiel.frameworkplayground.spring.game;
 
-import com.icoffiel.frameworkplayground.spring.spring.game.rest.GameRequest;
-import com.icoffiel.frameworkplayground.spring.spring.game.rest.GameResponse;
-import com.icoffiel.frameworkplayground.spring.spring.platform.Platform;
-import com.icoffiel.frameworkplayground.spring.spring.platform.PlatformRepository;
+import com.icoffiel.frameworkplayground.spring.game.rest.GameRequest;
+import com.icoffiel.frameworkplayground.spring.game.rest.GameResponse;
+import com.icoffiel.frameworkplayground.spring.platform.Platform;
+import com.icoffiel.frameworkplayground.spring.platform.PlatformRepository;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 

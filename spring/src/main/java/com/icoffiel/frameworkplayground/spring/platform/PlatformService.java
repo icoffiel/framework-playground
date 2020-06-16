@@ -1,7 +1,7 @@
-package com.icoffiel.frameworkplayground.spring.spring.platform;
+package com.icoffiel.frameworkplayground.spring.platform;
 
-import com.icoffiel.frameworkplayground.spring.spring.platform.rest.PlatformRequest;
-import com.icoffiel.frameworkplayground.spring.spring.platform.rest.PlatformResponse;
+import com.icoffiel.frameworkplayground.spring.platform.rest.PlatformRequest;
+import com.icoffiel.frameworkplayground.spring.platform.rest.PlatformResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

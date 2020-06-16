@@ -1,11 +1,12 @@
-package com.icoffiel.frameworkplayground.spring.spring.game;
+package com.icoffiel.frameworkplayground.spring.game;
 
-import com.icoffiel.frameworkplayground.spring.spring.game.rest.GameRequest;
-import com.icoffiel.frameworkplayground.spring.spring.game.rest.GameResponse;
+import com.icoffiel.frameworkplayground.spring.game.rest.GameRequest;
+import com.icoffiel.frameworkplayground.spring.game.rest.GameResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -24,7 +25,7 @@ public class GameController {
     }
 
     @PostMapping
-    public GameResponse addGame(@RequestBody GameRequest gameRequest) {
+    public GameResponse addGame(@Valid @RequestBody GameRequest gameRequest) {
         return gameService.save(gameRequest);
     }
 

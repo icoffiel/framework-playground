@@ -1,6 +1,6 @@
-package com.icoffiel.frameworkplayground.spring.spring.game.rest;
+package com.icoffiel.frameworkplayground.spring.game.rest;
 
-import com.icoffiel.frameworkplayground.spring.spring.platform.rest.PlatformResponse;
+import com.icoffiel.frameworkplayground.spring.platform.rest.PlatformResponse;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;

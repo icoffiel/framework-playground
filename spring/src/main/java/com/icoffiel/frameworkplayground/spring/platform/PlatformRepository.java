@@ -1,4 +1,4 @@
-package com.icoffiel.frameworkplayground.spring.spring.platform;
+package com.icoffiel.frameworkplayground.spring.platform;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
